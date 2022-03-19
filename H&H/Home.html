@@ -5,14 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoubleH</title>
+    <div class = "head">
     <h1><strong>H&H</strong></h1>
+    <a href="Home.html"><img src = "picture/1.png" width = "300" height="300" alt = "물고기고래" title ="NFT"></a>
+    </div>
+    
+    <style>
+        .head{
+            text-align: center;
+            
+            
+
+        }
+        .cetner{
+            text-align: center;
+
+        }
+    </style>
+    
 </head>
 <body>
-    <br>username : </br>
-    <input type="textbox" id = id placeholder="Username" name="username" required>
-    <br>password : </br>
-    <input type="password" id = pw placeholder="Password" name="username" required>
-    
+    <br>
+    <br>
+    <br>
+    <br>
+
     <script>
         function login(){
             var id = document.querySelector('#id');
@@ -26,7 +43,27 @@
             }
         }
     </script>
-    <button type="button" Botton name="Login" onclick="login();">Button </a></button>
-    <br><a href = "FindID.html">Find ID</a> <a href="FindPW.html">Find PW</a> <a href = "Create.html">Create ID</a>
+
+    <div class = "cetner">
+    <input type="textbox" id = id value="Username" name="username" required><br>
+    <input type="password" id = pw placeholder="Password" name="username" required><br>
+    <button type="" Botton name="Login" onclick="login();">Button </a></button>
+    
+    
+    
+    <br><a href = "FindID.html">Find ID</a>
+    <a href="FindPW.html">Find PW</a> 
+    <a href = "Create.html">Create ID</a><br>
+    
+    </div>
+    <table border="1">
+        <thead></thead><tbody></tbody><tfoot></tfoot>
+        <tr>
+            <td>이름</td><td>성별</td><td>주소</td>
+        </tr>
+        <tr>
+            <td>김현석</td><td>남자</td><td>naver.com</td>
+        </tr>
+    </table>
 </body>
 </html>
