@@ -5,19 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoubleH</title>
-    <div class = "head">
-    <h1><strong>H&H</strong></h1>
-    <a href="Home.html"><img src = "picture/1.png" width = "300" height="300" alt = "물고기고래" title ="NFT"></a>
-    </div>
+    
     
     <style>
         .head{
             text-align: center;
-            
-            
 
         }
-        .cetner{
+        .center{
+            width:100%;
+            text-align: center;
+
+        }
+        .center-text{
+            width:90%;
+        }
+        .menu-right-items{
+            display: flex;
+            margin-left: auto;
+
+        }
+        .menu{
+            
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+            
+        }
+        .left{
+            width:10%;
+            border-right: 1px solid black;
+            align-items: center;
+            
+        }
+        .left-items{
+            
             text-align: center;
 
         }
@@ -25,17 +47,42 @@
     
 </head>
 <body>
+    
+    <div class = "head">
+    <h1><strong>H&H</strong></h1>
+    <div class ="menu">
+    <div class="menu-right-items">
+        <a href = "Home.html">Home</a>
+    </div>
+    </div>
+    <a href="Home.html"><img src = "picture/1.png" width = "300" height="300" alt = "물고기고래" title ="NFT"></a>
+    </div>
+    <div class = "center">
+    <div class = "left">
+        <a href = "Home.html">Home</a><br>
+        하하하<br>
+        하하하<br>
+    </div>
+    <div class = "center-text">
+    <input type="textbox" id = id value="Username" name="username" required><br>
+    <input type="password" id = pw placeholder="Password" name="username" required><br>
+    <button type="" Botton name="Login" onclick="login();">Button </a></button>
+    <br><a href = "FindID.html">Find ID</a>
+    <a href="FindPW.html">Find PW</a> 
+    <a href = "Create.html">Create ID</a><br>
+    </div>
+    </div>
     <br>
     <br>
     <br>
     <br>
 
-    <script>
+    <script> // src = "../JS/DB.js"
         function login(){
             var id = document.querySelector('#id');
             var pw = document.querySelector('#pw');
             
-            if(pw.value == 1234){
+            if(pw.value == 1234 && id.value == "kim"){
                 location.href = "LoginPage.html";
             }
             else{
@@ -43,19 +90,11 @@
             }
         }
     </script>
-
+    
     <div class = "cetner">
-    <input type="textbox" id = id value="Username" name="username" required><br>
-    <input type="password" id = pw placeholder="Password" name="username" required><br>
-    <button type="" Botton name="Login" onclick="login();">Button </a></button>
-    
-    
-    
-    <br><a href = "FindID.html">Find ID</a>
-    <a href="FindPW.html">Find PW</a> 
-    <a href = "Create.html">Create ID</a><br>
     
     </div>
+
     <table border="1" align="center">
         <thead></thead><tbody></tbody><tfoot></tfoot>
         <tr>
